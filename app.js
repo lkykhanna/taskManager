@@ -3,7 +3,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const date = require(__dirname + "/date.js");
+
 const _ = require("lodash");
 
 
@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 
-mongoose.connect("mongodb+srv://admin:Lucky@12345@cluster0.vllfgsa.mongodb.net/todolistDB", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://admin:Lucky%4012345@cluster0.vllfgsa.mongodb.net/todolistDB", { useNewUrlParser: true });
 
 const itemsSchema = {
     name: String
@@ -162,12 +162,12 @@ app.get("/about", function(req, res) {
     res.render("about");
 });
 
+
+
 let port = process.env.PORT;
 if (port == null || port == "") {
     port = 3000;
 }
-
-
 app.listen(port, function() {
     console.log("Server started successfully");
 });
