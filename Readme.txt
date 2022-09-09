@@ -9,3 +9,6 @@ These all language make this project more amazing in functionalities.
 Live like of this projects -
 
 https://safe-woodland-89620.herokuapp.com/
+
+Created by Lucky Khanna ( B TECH in computer science and engineering)
+Open for suggestions and feedback ( luckykhanna09@gmail.com )
